@@ -5,6 +5,7 @@ import urllib.request
 import json
 
 strAppToken = "0528b84ab14a4c70ca646a160502c79f73345c6e"
+
 objReq = urllib.request.Request("https://api.waqi.info/feed/beijing/?token="+strAppToken)
 
 with urllib.request.urlopen(objReq) as objResponse:
