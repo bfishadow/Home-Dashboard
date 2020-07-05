@@ -16,7 +16,6 @@ objData = json.loads(objPage)
 intPM25Count = int(objData['data']['iaqi']['pm25']['v'])
 strRecieveTime = objData['data']['time']['s']
 
-
 print ("City: Beijing")
 print ("PM2.5:", intPM25Count)
 print ("Last Update:", strRecieveTime)

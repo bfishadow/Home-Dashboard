@@ -32,6 +32,7 @@ print ("PM2.5:", intPM25Count1)
 print ("Last Update:", strRecieveTime1)
 
 print ("---")
+
 print ("Public AQI")
 print ("PM2.5:", intPM25Count2)
 print ("Last Update:", strRecieveTime2)
