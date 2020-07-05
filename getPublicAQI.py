@@ -12,6 +12,10 @@ with urllib.request.urlopen(objReq) as objResponse:
 
 objData = json.loads(objPage)
 
-intPM25Count = objData['data']['iaqi']['pm25']['v']
+intPM25Count = int(objData['data']['iaqi']['pm25']['v'])
+strRecieveTime = objData['data']['time']['s']
 
-print(intPM25Count)
+
+print ("City: Beijing")
+print ("PM2.5:", intPM25Count)
+print ("Last Update:", strRecieveTime)
